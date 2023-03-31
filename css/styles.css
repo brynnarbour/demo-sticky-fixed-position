@@ -6,4 +6,33 @@ header,
 section {
     padding: 1rem;
 }
-/* developer styles go here */
+
+h1 {
+    position: sticky;
+    /* provide a value to the viewport of where this becomes fixed */
+    top: 0;
+}
+
+h2 {
+    position: sticky;
+    /* provide a value to the viewport of where this becomes fixed */
+    top: 0;
+    background-color: tomato;
+    padding: 0.5rem;
+}
+
+h3 {
+    position: sticky;
+    top: 52px;
+    background-color: #fff;
+}
+
+.snowflake {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+}
+
+/* position sticky needs direct siiblings to work, it works both like a relative and fixed */
+/* position fixed works like absolute in that it doesnt keep its space in the doc, but its positioned to the viewport when scrolling */
